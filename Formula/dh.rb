@@ -6,10 +6,10 @@ class Dh < Formula
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/duypham2407/dh-kit/releases/download/v0.1.0/dh-darwin-arm64"
-    sha256 "244cbef1a441a450fa87670e9a429082f5cbcee423b731bb896bfa4fd101688d"
+    sha256 "28d0126eaca643b1eabc81b7b9a0b034c5546ce2768d7935a97a66149070ed6f"
   elsif OS.mac? && Hardware::CPU.intel?
     url "https://github.com/duypham2407/dh-kit/releases/download/v0.1.0/dh-darwin-amd64"
-    sha256 "fde80e128ba820ba66da4978bccdf97300efc032ab1e494d9f468d684a6c0be7"
+    sha256 "9b7e162817de4265f4ec3b45352d33dddbf647bd113d727c9fb60c3e4b34fc51"
   end
 
   def install
