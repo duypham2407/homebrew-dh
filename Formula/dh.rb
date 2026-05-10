@@ -1,17 +1,17 @@
 class Dh < Formula
   desc "Local-first AI coding assistant for macOS and Linux"
   homepage "https://github.com/duypham2407/dh-kit"
-  version "0.3.1-rc.7"
+  version "0.4.0-rc.1"
   license "MIT"
 
   depends_on "node@22"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/duypham2407/dh-kit/releases/download/v0.3.1-rc.7/dh-darwin-arm64"
-    sha256 "659ada0b01f1b2d76b6a2611180979f5d4ee31a221eb8e079b4a11a481e99f3c"
+    url "https://github.com/duypham2407/dh-kit/releases/download/v0.4.0-rc.1/dh-darwin-arm64"
+    sha256 "635731ab012cbf0a9f057d239803d074cb28c6461b05337f820dfda292afa91b"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/duypham2407/dh-kit/releases/download/v0.3.1-rc.7/dh-darwin-amd64"
-    sha256 "8aa0e16cf8ce2493a5771fdb19da439d304bfebe544d83c3c8d875975a8ad4ab"
+    url "https://github.com/duypham2407/dh-kit/releases/download/v0.4.0-rc.1/dh-darwin-amd64"
+    sha256 "554695713943df06bc86670c9a1276ed7a59b71d3334fad71495c402a7e3274c"
   end
 
   def install
